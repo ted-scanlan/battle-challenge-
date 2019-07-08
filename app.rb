@@ -4,11 +4,12 @@ require 'sinatra'
 set :session_secret, 'super secret'
 
 get '/' do
+  @random_name = ["Ted", "Anastasiia", "Cat"].sample
   erb(:index)
 end
 
 get '/secret' do
-  "whats up dude?"
+  "welcome to this secret page ;)"
 end
 
 get '/cat' do
