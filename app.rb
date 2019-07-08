@@ -4,7 +4,7 @@ require 'sinatra'
 set :session_secret, 'super secret'
 
 get '/' do
-  "HELLO!!!!!"
+  erb(:index)
 end
 
 get '/secret' do
